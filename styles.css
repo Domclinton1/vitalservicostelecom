@@ -83,7 +83,7 @@ main {
   color: var(--branco);
   text-align: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(./assets/images/banner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./assets/images/banner.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,7 +155,18 @@ main {
 .promisse-carousel::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
-
+.carrossel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
 .p-box {
   flex: 0 0 auto;
   scroll-snap-align: start;
@@ -228,6 +239,27 @@ main {
 
 .plano-box .cta-button {
     width: fit-content;
+}
+
+.plano-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.plano-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+.conteudos  {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+}
+.conteudos img {
+  max-width: 30px;
+  border-radius: 8px;
 }
 
 
@@ -594,14 +626,20 @@ main {
     font-size: 5rem;
   }
   .planos-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
     margin-bottom: 20px;
   }
   .plano-box {
-    max-width: 350px;
+    max-width: 300px;
+    height: 100%;
     margin: 0 auto;
   }
+  .plano-box h3 {
+    line-height: 0.8;
+    font-size: 2.5rem;
+  }
+  
   .garantia {
     background-color: #020202;
   }
