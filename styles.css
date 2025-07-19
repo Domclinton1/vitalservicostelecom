@@ -193,9 +193,11 @@ main {
     gap: 1rem;
 }
 .plano h2 {
+  margin-top: 20px;
+  line-height: 1;
     font-size: 2rem;
     font-weight: bold;
-    background: linear-gradient(to right, #34459b, rgb(71, 240, 71));
+    background: linear-gradient(to right, #fff, rgb(71, 240, 71));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -203,8 +205,9 @@ main {
 }
 .plano .p {
     font-size: 1.5rem;
+    line-height: 1;
     font-weight: bold;
-    background: linear-gradient(to right, #34459b, #ffffff);
+    background: linear-gradient(to right, #3367d6, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -235,7 +238,14 @@ main {
 }
 .plano-box h3 {
     font-size: 3rem;
+    background-color: gold;
+    border-radius: 15px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 3px 1px #34459b;
 }
+
 .plano-box p {
     font-size: 22px;
     padding-left: 30px;
@@ -276,6 +286,20 @@ main {
   max-width: 30px;
   border-radius: 8px;
 }
+.plano-combo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+.plano-combo strong {
+  font-size: 30px;
+}
+
+
 
 
 .avaliacoes {
@@ -640,6 +664,17 @@ main {
   .hero-box span {
     font-size: 5rem;
   }
+  .hero .cta-button {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    padding: 7px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .promisse {
+    padding-left: 10px;
+  }
   .planos-container {
     flex-direction: row;
     gap: 1rem;
@@ -652,6 +687,10 @@ main {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
+  .p {
+    padding: 10px;
+    font-size: 1rem;
+  }
   .plano-box {
     max-width: 300px;
     height: 100%;
@@ -663,6 +702,11 @@ main {
   .plano-box h3 {
     line-height: 0.8;
     font-size: 2rem;
+    padding: 5px;
+  }
+  .mesh {
+    width: 100%;
+    
   }
   .plano-box h4 {
     line-height: 1;
