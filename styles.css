@@ -237,13 +237,14 @@ main {
     text-align: left;
 }
 .plano-box h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: gold;
     border-radius: 15px;
     padding: 2px;
     width: 100%;
     text-align: center;
     box-shadow: 1px 3px 1px #34459b;
+    line-height: 1;
 }
 
 .plano-box p {
@@ -263,6 +264,7 @@ main {
     padding: 10px;
     font-size: 100%;
     align-items: center;
+    text-align: center;
 }
 
 .plano-lista {
