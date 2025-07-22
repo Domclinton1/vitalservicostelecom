@@ -818,9 +818,37 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
 }
 .about-main {
     background-color: var(--preto-4);
+}
+.about-main  .hero{
+  background-image: url(./assets/images/about-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-main .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* sombra escura com opacidade */
+  z-index: 0;
+}
+.about-main .hero > * {
+  position: relative;
+  z-index: 1;
+}
+.about-main .hero {
+  width: 100%;
 }
 .service-main {
     background-color: var(--preto-4);
@@ -829,6 +857,30 @@ main {
 
 @media screen and (max-width: 1020px) {
   .header-about  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-main .hero {
+    width: 100%;
+    padding: 10px;
+    gap: 1rem;
+    background-position: 50% 50%;
+  }
+  .about-main .hero h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+
+  }
+  .about-main .hero p {
+    font-size: 18px;
+  }
+  .about-main .hero-box span {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+  .about-main .hero-box {
+    gap: 1rem;
     display: flex;
     flex-direction: column;
   }
