@@ -826,3 +826,51 @@ main {
     background-color: var(--preto-4);
     color: var(--branco);
 }
+
+@media screen and (max-width: 1020px) {
+  .header-about  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre {
+    flex-direction: column;
+  }
+  .mvv-box {
+    flex-direction: column-reverse;
+  }
+  .mvv-img img {
+    width: 100%;
+  }
+
+}
+.service-main .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./assets/images/dadosnatela.jpg);
+}
+.service-main {
+  background-image: url(./assets/images/rede-cabeada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* sombra escura com opacidade */
+  z-index: 0;
+}
+.service-main > * {
+  position: relative;
+  z-index: 1;
+}
+.services-container  {
+  padding: 10px;
+  
+}
