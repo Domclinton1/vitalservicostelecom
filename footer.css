@@ -1,0 +1,51 @@
+.site-footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00ff9d;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+.footer-copy a {
+  color: #00ff9d;
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  text-decoration: underline;
+}
