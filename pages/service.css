@@ -144,7 +144,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;*/
-  background-color: #fff;
+  background-color: var(--preto-4);
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -171,13 +171,17 @@ section {
 }
 
 
-
+.services {
+  color: #ffffff;
+}
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
-
+.services-container h2, p {
+  color: #ffffff;
+}
 .service-item {
   background: #f9f9f9;
   border-radius: 12px;
