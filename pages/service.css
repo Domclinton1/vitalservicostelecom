@@ -206,3 +206,154 @@ section {
   font-size: 0.95rem;
   color: #555;
 }
+
+.diferenciais {
+  padding: 60px 20px;
+  background-color: #f7f9fb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.diferencial-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.diferencial-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.diferencial-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.diferencial-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #1f3c88;
+}
+
+.diferencial-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.galeria-fotos {
+  padding: 60px 20px;
+  background-color: var(--preto-4);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.galeria-fotos .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galeria-fotos .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ceff2e;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+
+.lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: zoom-out;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+
+.galeria-fotos .section-subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.foto-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.foto-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.foto-item:hover img {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1020px) {
+  .service-main .hero {
+    width: 100%;
+    padding: 10px;
+    gap: 1rem;
+    background-position: 50% 50%;
+  }
+  .service-main .hero h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+
+  }
+  .service-main .hero p {
+    font-size: 18px;
+  }
+}
