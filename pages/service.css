@@ -486,14 +486,18 @@ section {
 
 
 @media screen and (max-width: 1020px) {
+  header nav a {
+    line-height: 1;
+    text-align: center;
+  }
   .service-main .hero {
     width: 100%;
     padding: 10px;
     gap: 1rem;
     background-position: 50% 50%;
   }
-  .service-main .hero h1 {
-    font-size: 22px;
+  .service-main .hero-service h1 {
+    font-size: 2rem;
     text-transform: uppercase;
 
   }
@@ -502,5 +506,12 @@ section {
   }
   .slider-btn {
     display: none;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services img {
+    box-shadow: 3px 5px 3px #3c61b0;
+    border-radius: 15px;
   }
 }
