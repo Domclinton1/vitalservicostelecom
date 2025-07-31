@@ -49,13 +49,18 @@ nav a {
     
 }
 nav a:hover {
-    color: gold;
+    color: #00ff9d;
 }
 nav a:last-child {
     border: 1px solid #fff;
     padding: 10px;
     border-radius: 12px;
 }
+nav a:hover:last-child {
+    color: #00ff9d;
+    border: 1px #00ff9d solid;
+}
+
 .cta-button {
     background-color: ;
     color: var(--branco);

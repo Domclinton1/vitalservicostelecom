@@ -117,4 +117,13 @@
   .contato-infos {
     padding: 0;
   }
+  nav a:last-child {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
+  header nav a {
+    line-height: 1;
+    text-align: center;
+  }
 }
