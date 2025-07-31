@@ -172,6 +172,8 @@ section {
 }
 .services img {
   max-width: 400px;
+  box-shadow: 3px 5px 3px #3c61b0;
+  border-radius: 15px;
 }
 
 .services {
