@@ -120,6 +120,8 @@ main {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
+    text-shadow: 1px 3px 1px #1d1d1d;
+    line-height: 1;
 }
 
 
@@ -209,7 +211,19 @@ section {
   font-size: 0.95rem;
   color: #555;
 }
-
+.services-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.services-text h2 {
+  text-align: center;
+  line-height: 1;
+  color: #ceff2e;
+  font-size: 1.6rem;
+}
 .diferenciais {
   padding: 60px 20px;
   background-color: var(--preto-4);
@@ -497,12 +511,12 @@ section {
     background-position: 50% 50%;
   }
   .service-main .hero-service h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
 
   }
   .service-main .hero p {
-    font-size: 18px;
+    font-size: 1rem;
   }
   .slider-btn {
     display: none;

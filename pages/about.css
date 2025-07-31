@@ -275,12 +275,13 @@ main {
     background-position: 50% 50%;
   }
   .about-main .hero h1 {
-    font-size: 22px;
+    font-size: 1.8rem;
     text-transform: uppercase;
 
   }
   .about-main .hero p {
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1;
   }
   .about-main .hero-box span {
     width: 100%;
