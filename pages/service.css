@@ -209,7 +209,7 @@ section {
 
 .diferenciais {
   padding: 60px 20px;
-  background-color: #f7f9fb;
+  background-color: var(--preto-4);
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
@@ -269,19 +269,18 @@ section {
   font-size: 0.95rem;
   color: #555;
 }
-
 .galeria-fotos {
   padding: 60px 20px;
-  background-color: var(--preto-4);
+  background-color: var(--preto-2);
   font-family: 'Segoe UI', sans-serif;
 }
 
-.galeria-fotos .container {
-  max-width: 1200px;
+.container {
+  max-width: 1020px;
   margin: auto;
 }
 
-.galeria-fotos .section-title {
+.section-title {
   text-align: center;
   font-size: 2.2rem;
   color: #ceff2e;
@@ -289,55 +288,197 @@ section {
   line-height: 1;
 }
 
-
-.lightbox {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 9999;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    cursor: zoom-out;
-  }
-
-  .lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-  }
-
-.galeria-fotos .section-subtitle {
+.section-subtitle {
   text-align: center;
   color: #fff;
   font-size: 1rem;
   margin-bottom: 40px;
 }
 
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.galeria-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.galeria-slider {
+  display: flex;
   gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.galeria-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .foto-item {
-  position: relative;
+  flex: 0 0 auto;
+  width: 240px;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .foto-item img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.foto-item:hover {
+  transform: scale(1.05);
+}
+
+.galeria-slider-container {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.galeria-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.galeria-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1a1a1a;
+  color: #ceff2e;
+  border: none;
+  font-size: 24px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  opacity: 0.8;
+  z-index: 1000; /* mais alto que tudo */
+  pointer-events: all;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.prev {
+  left: -10px;
+}
+
+.slider-btn.next {
+  right: -10px;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.clientes-parceiros {
+  padding: 60px 20px;
+  background-color: var(--preto-4);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.clientes-parceiros .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clientes-parceiros .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ceff2e;
+  width: 100%;
+}
+
+.clientes-parceiros .section-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.cliente-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
-.foto-item:hover img {
-  transform: scale(1.05);
+.cliente-item:hover {
+  transform: translateY(-5px);
+}
+
+.cliente-item img {
+  max-height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.cliente-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
+.cta-contato {
+ 
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--azul);
+  border-radius: 12px;
+  box-shadow: 3px 5px 3px #ceff2e;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.cta-contato:hover {
+  background-color: #ceff2e;
+  box-shadow: 3px 5px 3px var(--azul-2);
+  color: #34459b;
+  font-weight: 500;
+}
+.directioner {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -355,5 +496,8 @@ section {
   }
   .service-main .hero p {
     font-size: 18px;
+  }
+  .slider-btn {
+    display: none;
   }
 }

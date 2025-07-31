@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Serviços Telecom</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header-about">
+        <div class="logo">
+            <img src="../assets/icons/logo.png" alt="Logomarca de Vital Serviços Telecom">
+        </div>
+        <nav>
+            <a href="../index.html">Planos de Internet</a>
+            <a href="../pages/about.html">Quem Somos</a>
+            <a href="../pages/contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="contato">
+        <div class="container">
+            <div class="contato-wrapper">
+            <!-- Bloco 1: Formulário -->
+            <div class="contato-formulario">
+                <h2>Fale com a Vital</h2>
+                <p>Envie sua mensagem e nossa equipe entrará em contato o mais rápido possível.</p>
+
+                <form id="form-contato" class="formulario">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="name" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="phone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+                </form>
+
+            </div>
+
+            <!-- Bloco 2: Informações -->
+            <div class="contato-infos">
+                <h3>Informações de Contato</h3>
+                <ul>
+                <li><strong>Endereço:</strong> Alameda dos Sábias, 791 – Cabral, Contagem – MG</li>
+                <li><strong>Email:</strong> <a href="mailto:vitalstgestor@gmail.com">vitalstgestor@gmail.com</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/5531997251301" target="_blank">(31) 9 9725-1301</a></li>
+                <li><strong>Telefone:</strong> (31) 9 8438-5028</li>
+                </ul>
+
+                <div class="contato-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.114123544336!2d-44.04754252477417!3d-19.877402381499195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69389dd8bcc79%3A0xb10611982faeb3dd!2sAlameda%20dos%20Sabi%C3%A1s%2C%20791%20-%20Cabral%2C%20Contagem%20-%20MG%2C%2032146-024!5e0!3m2!1spt-BR!2sbr!4v1753924502235!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">
+            <img src="../assets/icons/logo.png" alt="Logo Vital Serviços Telecom">
+            </a>
+
+            <div class="footer-links">
+            <a href="../index.html">Planos de Internet</a>
+            <a href="./about.html" target="_blank">Quem Somos</a>
+            <a href="./service.html">Serviços</a>
+            <a href="#">Contato</a>
+            </div>
+
+            <div class="footer-copy">
+            <p>&copy; 2025 Vital Serviços Telecom – Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://www.instagram.com/clintindossites/" target="_blank">Clintin dos Sites</a></p>
+            </div>
+        </div>
+    </footer>
+
+    
+       
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Inicializa o EmailJS
+        (function() {
+            emailjs.init("TYwPxTimyrufMnMyn"); // substitua por sua Public Key (User ID)
+        })();
+
+        // Lida com o envio do formulário
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_opbb24e', 'template_dih8kvs', this)
+            .then(() => {
+                alert('Mensagem enviada com sucesso!');
+                this.reset();
+            }, (error) => {
+                alert('Erro ao enviar. Tente novamente.');
+                console.error(error);
+            });
+        });
+    </script>
+
+    
+
+</body>
+</html>

@@ -31,18 +31,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
- const fotos = document.querySelectorAll('.foto-item img');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
+const fotos = document.querySelectorAll('.foto-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
 
-        fotos.forEach(img => {
-        img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightbox.style.display = 'flex';
-        });
-        });
+ fotos.forEach(img => {
+   img.addEventListener('click', () => {
+   lightboxImg.src = img.src;
+   lightbox.style.display = 'flex';
+   });
+  });
 
-        function closeLightbox() {
-        lightbox.style.display = 'none';
-        lightboxImg.src = '';
-        }
+function closeLightbox() {
+lightbox.style.display = 'none';
+lightboxImg.src = '';
+}
+
+
+function scrollGaleria(direction) {
+  const slider = document.getElementById('galeria-slider');
+  const scrollAmount = 260;
+  slider.scrollLeft += direction * scrollAmount;
+}
