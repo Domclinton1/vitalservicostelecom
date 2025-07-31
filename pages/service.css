@@ -90,7 +90,6 @@ main {
   background-position: 50% 50%;
   z-index: 1;
   overflow: hidden;
-  height: 60vh;
 }
 
 .hero-service::before {
