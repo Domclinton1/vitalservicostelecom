@@ -85,7 +85,6 @@ main {
   color: var(--branco);
   text-align: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../assets/images/dadosnatela.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -133,9 +132,7 @@ main {
     background: #34459b;
 }
 
-.service-main .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./assets/images/dadosnatela.jpg);
-}
+
 .service-main {
   /*background-image: url(./assets/images/rede-cabeada.jpg);
   background-size: cover;
