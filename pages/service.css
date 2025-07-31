@@ -75,7 +75,7 @@ nav a:last-child {
 main {
     background: var(--preto-4);
 }
-.hero {
+.hero-service {
   position: relative;
   padding: 10px 4%;
   display: flex;
@@ -85,7 +85,7 @@ main {
   color: var(--branco);
   text-align: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(./assets/images/banner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../assets/images/dadosnatela.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -94,20 +94,20 @@ main {
   height: 60vh;
 }
 
-.hero::before {
+.hero-service::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 1); /* sombra escura com opacidade */
+  background: rgba(0, 0, 0, 0.2); /* sombra escura com opacidade */
   z-index: 0;
 }
 
-.hero > * {
+.hero-service > * {
   position: relative;
   z-index: 1;
 }
 
-.hero h1 {
+.hero-service h1 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1;
@@ -117,7 +117,7 @@ main {
     -webkit-text-fill-color: transparent;
     
 }
-.hero p {
+.hero-service p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
@@ -169,10 +169,16 @@ section {
   padding: 10px;
   
 }
-
+.services-text {
+  flex: 1;
+}
+.services img {
+  max-width: 400px;
+}
 
 .services {
   color: #ffffff;
+  display: flex;
 }
 .services-list {
   display: grid;

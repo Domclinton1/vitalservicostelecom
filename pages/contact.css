@@ -103,6 +103,9 @@
   border: 0;
   border-radius: 8px;
 }
+.redes-sociais {
+  padding: 15px;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {

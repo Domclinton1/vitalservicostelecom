@@ -83,8 +83,7 @@ main {
   color: var(--branco);
   text-align: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./assets/images/banner.jpg);
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -108,14 +107,14 @@ main {
 .hero h1 {
     font-size: 1.9rem;
     font-weight: bold;
-    background: linear-gradient(to right, #34459b, #ffffff);
+    background: linear-gradient(to right, #cef29e, #00ff9d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(to left, #34459b, #ffffff);
+    background: linear-gradient(to left, #fff, #cef29e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
