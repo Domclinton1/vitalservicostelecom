@@ -147,8 +147,13 @@ main {
   overflow: hidden;
   position: relative;
 }
+.hero-service {
+  max-width: 100%;
+}
 section {
   padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 /*
 .service-main::before {
