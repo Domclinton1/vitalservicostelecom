@@ -25,6 +25,12 @@ html {
     scroll-behavior: smooth;
 }
 
+h2 {
+  background: linear-gradient(to right, #0f172a, rgb(81, 87, 207));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .cta-button {
     background-color: ;
     color: var(--branco);
@@ -42,7 +48,7 @@ html {
 
 
 main {
-    background: var(--preto-4);
+    background: var(--branco);
 }
 .hero-service {
   position: relative;
@@ -111,7 +117,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;*/
-  background-color: var(--preto-4);
+  background-color: var(--branco);
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -151,7 +157,7 @@ section {
 }
 
 .services {
-  color: #ffffff;
+  color: var(--preto-4);
   display: flex;
 }
 .services-list {
@@ -159,11 +165,11 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
-.services-container h2, p {
-  color: #ffffff;
+.services-container  p {
+  color: var(--preto-4);
 }
 .service-item {
-  background: #f9f9f9;
+  background:linear-gradient(to top, #255fe7, rgb(81, 87, 207));
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -173,18 +179,20 @@ section {
 }
 
 .service-item img {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 }
 
 .service-item-text h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  line-height: 1.1;
   margin-bottom: 4px;
+  color: var(--branco);
 }
 
 .service-item-text p {
   font-size: 0.95rem;
-  color: #555;
+  color: #ede8e8;
 }
 .services-text {
   padding-top: 20px;
@@ -201,7 +209,7 @@ section {
 }
 .diferenciais {
   padding: 60px 20px;
-  background-color: var(--preto-4);
+  background-color: var(--branco);
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
@@ -232,7 +240,8 @@ section {
 }
 
 .diferencial-item {
-  background: #fff;
+  background:linear-gradient(to top, #255fe7, rgb(81, 87, 207));
+  box-shadow: 5px 10px 5px #0f172a;
   border-radius: 12px;
   padding: 30px 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -241,8 +250,10 @@ section {
 }
 
 .diferencial-item:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  
+  
 }
 
 .diferencial-item img {
@@ -252,14 +263,19 @@ section {
 }
 
 .diferencial-item h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   color: #1f3c88;
+}
+.diferencial-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .diferencial-item p {
   font-size: 0.95rem;
-  color: #555;
+  color: #f3ecec;
 }
 .galeria-fotos {
   padding: 60px 20px;
