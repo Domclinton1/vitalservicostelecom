@@ -3,9 +3,22 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 4%;
-  background: linear-gradient(to right, #0f172a, rgb(81, 87, 207));
-  border-bottom: 1px solid rgb(71, 231, 71);
+  background:linear-gradient(to top, #255fe7, rgb(81, 87, 207));
+  
 }
+/* Adiciona a transição suave */
+header {
+  transition: top 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1002;
+}
+
+/* Classe para esconder o header */
+header.hide {
+  top: -100px;
+}
+
 
 .logo img {
   height: 40px;
@@ -50,7 +63,7 @@ header {
 
   .nav-links {
     flex-direction: column;
-    background-color: #0f172a;
+    background:linear-gradient(to right, #255fe7, rgb(81, 87, 207));
     position: fixed;
     top: 0;
     right: -100%;

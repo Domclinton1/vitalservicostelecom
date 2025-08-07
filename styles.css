@@ -586,9 +586,7 @@ section {
 
 
 @media screen and (max-width: 1020px) {
-  header {
-    flex-direction: column;
-  }
+  
   .hero-box {
     width: 100%;
   }

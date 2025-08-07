@@ -69,3 +69,39 @@ function scrollGaleria(direction) {
   const scrollAmount = 260;
   slider.scrollLeft += direction * scrollAmount;
 }
+
+
+// Inicializa o EmailJS
+(function() {
+    emailjs.init("VdZa4xr64wGqCfBmg"); // substitua por sua Public Key (User ID)
+})();
+
+// Lida com o envio do formulário
+document.getElementById('form-contato').addEventListener('submit', function(event) {
+event.preventDefault();
+
+emailjs.sendForm('service_opbb24e', 'template_dih8kvs', this)
+.then(() => {
+alert('Mensagem enviada com sucesso!');
+this.reset();
+}, (error) => {
+alert('Erro ao enviar. Tente novamente.');
+console.error(error);
+  });
+});
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+
+  if (window.scrollY > lastScrollY) {
+    // Scrolling para baixo
+    header.classList.add("hide");
+  } else {
+    // Scrolling para cima
+    header.classList.remove("hide");
+  }
+
+  lastScrollY = window.scrollY;
+});

@@ -36,6 +36,7 @@
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,11 +46,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="header-about">
+    <header>
         <div class="logo">
             <img src="../assets/icons/logo.png" alt="Logomarca de Vital Serviços Telecom">
         </div>
-        <nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+        <nav class="nav-links">
             <a href="../index.html">Planos de Internet</a>
             <a href="../pages/service.html">Nossos serviços</a>
             <a href="../pages/about.html">Sobre a empresa</a>
@@ -141,28 +145,7 @@
        
     <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        // Inicializa o EmailJS
-        (function() {
-            emailjs.init("VdZa4xr64wGqCfBmg"); // substitua por sua Public Key (User ID)
-        })();
-
-        // Lida com o envio do formulário
-        document.getElementById('form-contato').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            emailjs.sendForm('service_opbb24e', 'template_dih8kvs', this)
-            .then(() => {
-                alert('Mensagem enviada com sucesso!');
-                this.reset();
-            }, (error) => {
-                alert('Erro ao enviar. Tente novamente.');
-                console.error(error);
-            });
-        });
-    </script>
-
-    
+       
 
 </body>
 </html>

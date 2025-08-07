@@ -35,6 +35,7 @@
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/service.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,17 +45,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="header-about">
+    <header>
         <div class="logo">
             <img src="../assets/icons/logo.png" alt="Logomarca de Vital Serviços Telecom">
         </div>
-        <nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+        <nav class="nav-links">
             <a href="../index.html">Planos de Internet</a>
             <a href="../pages/service.html">Nossos serviços</a>
             <a href="../pages/about.html">Sobre a empresa</a>
             <a href="../pages/contact.html">Fale conosco</a>
         </nav>
     </header>
+
+    <!-- Overlay fora do header -->
+    <div class="menu-overlay"></div>
     <main class="service-main">
         <section class="hero-service" style="background-image: url(../assets/images/service-hero.webp);">
             <h1>Soluções Técnicas em Redes e Telecomunicações</h1>

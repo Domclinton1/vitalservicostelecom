@@ -34,7 +34,8 @@
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,14 +46,21 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./assets/icons/logo.png" alt="Logomarca de Vital Serviços Telecom">
+            <img src="../assets/icons/logo.png" alt="Logomarca de Vital Serviços Telecom">
         </div>
-        <nav>
-            <a href="#planos-internet">Planos de Internet</a>
-            <a href="./pages/about.html">Quem Somos</a>
-           
+
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+        <nav class="nav-links">
+            <a href="../index.html">Planos de Internet</a>
+            <a href="../pages/service.html">Nossos serviços</a>
+            <a href="../pages/about.html">Sobre a empresa</a>
+            <a href="../pages/contact.html">Fale conosco</a>
         </nav>
     </header>
+
+    <!-- Overlay fora do header -->
+    <div class="menu-overlay"></div>
     <main>
         <section class="hero" style="background-image: url(./assets/images/banner.webp);">
             <h1>NAVEGUE COM VELOCIDADE TOTAL COM A MELHOR FIBRA ÓPTICA DA GRANDE BH</h1>
