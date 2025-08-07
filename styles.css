@@ -26,40 +26,7 @@ html {
 }
 
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 4%;
-    background: linear-gradient(to right, #1d1d1d, #34459b);
-    border-bottom: 1px solid rgb(71, 231, 71);
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-nav a {
-    color: var(--branco);
-    font-size: 20px;
-    text-decoration: none;
-    transition: 0.5s ease;
-    
-}
-nav a:hover {
-    color: #00ff9d;
-}
-nav a:last-child {
-    border: 1px solid #fff;
-    padding: 10px;
-    border-radius: 12px;
-}
-nav a:hover:last-child {
-    color: #00ff9d;
-    border: 1px #00ff9d solid;
-}
+
 
 .cta-button {
     background-color: ;
