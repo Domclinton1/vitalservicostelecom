@@ -31,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 4%;
-    background: linear-gradient(to right, #1d1d1d, #34459b);
+    background: linear-gradient(to right, #0f172a, rgb(81, 87, 207));
     border-bottom: 1px solid rgb(71, 231, 71);
 }
 nav {
@@ -55,6 +55,14 @@ nav a:last-child {
     border: 1px solid #fff;
     padding: 10px;
     border-radius: 12px;
+}
+h2 {
+  background: linear-gradient(to right, #0f172a, rgb(81, 87, 207));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  color: var(--preto-4)
 }
 .cta-button {
     background-color: ;
@@ -185,12 +193,7 @@ main {
     gap: 1rem;
     line-height: 1.1;
 }
-.mvv-box h2 {
-    background: linear-gradient(to right, #ceff2e, rgb(32, 69, 204));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-}
+
 .mvv-img img {
     max-width: 400px;
     border-radius: 15px;
@@ -224,7 +227,7 @@ main {
 }
 
 .about-main {
-    background-color: var(--preto-4);
+    background-color: #ffffff;
 }
 .about-main  .hero{
   background-size: cover;
@@ -252,10 +255,19 @@ main {
 .about-main .hero {
   width: 100%;
 }
-.service-main {
-    background-color: var(--preto-4);
-    color: var(--branco);
+
+.sobre {
+  color: var(--preto-4);
 }
+.sobre-text {
+  color: var(--preto-4);
+}
+.sobre-text h2 {
+  background: linear-gradient(to right, #0f172a, rgb(81, 87, 207));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 @media screen and (max-width: 1020px) {
     header {

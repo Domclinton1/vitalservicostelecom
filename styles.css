@@ -79,6 +79,10 @@ nav a:hover:last-child {
 main {
     background: var(--preto-4);
 }
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .hero {
   position: relative;
   padding: 10px 4%;
@@ -94,6 +98,7 @@ main {
   background-position: 50% 50%;
   z-index: 1;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .hero::before {
@@ -110,6 +115,7 @@ main {
 }
 
 .hero h1 {
+    max-width: 1000px;
     font-size: 1.9rem;
     font-weight: bold;
     background: linear-gradient(to right, #cef29e, #00ff9d);
@@ -117,6 +123,7 @@ main {
     -webkit-text-fill-color: transparent;
 }
 .hero p {
+    max-width: 1000px;
     font-size: 1.5rem;
     font-weight: bold;
     background: linear-gradient(to left, #fff, #cef29e);
@@ -137,6 +144,7 @@ main {
 }
 .hero-box {
     line-height: 1;
+    
    
 }
 /*Fim da Hero - Inicio da Promisse*/
